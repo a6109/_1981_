@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url(../fonts/MyriadPro-Regular.eot);
+src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url(../fonts/MyriadPro-Regular.woff) format('woff'),
+url(../fonts/MyriadPro-Regular.ttf) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body{
+	font-family: 'Myriad Pro Regular';
+	background: #8e4423 url(../img/bg.png) center center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+.main-center{
+	width: 960px;
+	margin:0 auto;
+}
+.header{
+	background: #232628;
+	border-radius: 0 0 10px 10px;
+	padding: 20px 27px 20px 24px;
+	display: flex;
+	justify-content: space-between;
+}
+.header__left{
+	display: flex;
+}
+.logo{
+	text-decoration: none;
+}
+.logo__text{
+	color: #e6e3bb;
+	font-size: 30px;
+	padding-right: 20px;
+	border-right: 1px solid #7b7a6d;
+	
+}
+.nav{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.nav__item{
+	margin: 0 10px 0 20px;
+	position: relative;
+	line-height: 30px;
+}
+.nav a{
+	text-decoration: none;
+	color: #e6e3bb;
+	font-size: 14px;
+}
+.nav__item_active a,.nav a:hover{
+	color: #8e4423;
+}
+.nav__item_have-inner:hover .nav__inner{
+	top: 25px;
+	transition: 0.2s;
+}
+.nav__inner{
+	position: absolute;
+	top: -1000px;
+	left: -15px;
+	background: rgba(40, 39, 39, 0.95);
+	padding: 15px 25px 20px 20px;
+	width: 225px;
+	border-radius: 10px;
+	border-top: 1px solid #3a3a3a;
+	box-shadow: 0 0 5px black;
+}
+.nav__inner li{
+	line-height: 30px;
+	border-bottom: 1px solid black;
+	box-shadow: 0 5px 5px -5px #3a3a3a;
+}
+.nav__inner li:last-child{
+	border-bottom: none;
+	box-shadow:none;
+}
+.nav__inner a{
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;
+	color: #7b7a6d;
+}
+.nav__inner a:hover{
+	color: #cac7a5; 
+}
+.client-form{
+	display: flex;
+}
+.client-form__text{
+	border-radius: 5px;
+	border-bottom: 1px solid #3a3a3a;
+	background: #1f2123;
+	padding:0 15px;
+	line-height: 27px;
+	font-size: 14px;
+	color: #7b7a6d;
+	margin:0 10px;
+}
+.client-form__text-user{
+	color: #8e4423;
+}
+.client-form__out{
+	color: #e6e3bb;
+	background: #984a26;
+	border-radius: 5px;
+	border: none;
+	line-height: 27px;
+	font-size: 14px;
+	padding:0 15px;
+	cursor: pointer;
+}
+.header__right{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
