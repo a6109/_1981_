@@ -89,19 +89,30 @@ body{
 	color: #8e4423;
 }
 .nav__item_have-inner:hover .nav__inner{
-	top: 25px;
+	top: 40px;
 	transition: 0.2s;
 }
 .nav__inner{
 	position: absolute;
 	top: -1000px;
-	left: -15px;
+	left: -16px;
 	background: rgba(40, 39, 39, 0.95);
 	padding: 15px 25px 20px 20px;
 	width: 225px;
 	border-radius: 10px;
 	border-top: 1px solid #3a3a3a;
 	box-shadow: 0 0 5px black;
+	display: block;
+}
+.nav__inner:before{
+	position: absolute;
+	top: -12px;
+	left: 10px;
+	background: url(../img/arrow.png) center center no-repeat;
+	width: 40px;
+	height: 20px;
+	display: block;
+	content: "";
 }
 .nav__inner li{
 	line-height: 30px;
