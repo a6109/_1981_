@@ -320,6 +320,32 @@ body{
 	border-top: 1px solid #545658;
 	padding: 30px 70px;
 	margin-top: 70px;
+	position: relative;
+}
+.tubs-list__headers{
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.tubs-list__headers li{
+	font-size: 12px;
+	color: #5b5b5b;
+	border-radius: 5px 5px 0 0;
+	background: #242729;
+	border-top: 1px solid #545658;
+	padding:5px 20px;
+}
+.tubs-list__headers a{
+	color: inherit;
+}
+.tubs-list__headers li:hover,.tubs-list__headers .active{
+	position: relative;
+	top: -5px;
+	color: #e6e3bb;
+	font-size: 14px;
+	padding: 10px 25px;
 }
 .slider{
 	position: relative;
@@ -379,6 +405,86 @@ body{
 }
 .slider__nav_right{	
 	-webkit-transform: rotate(180deg);
-   right: -20px;
-   
+   right: -20px;   
+}
+.footer{
+	background: #242729;
+	border-top: 10px solid #8a4222;
+	padding: 15px 20px 20px 20px;
+}
+.footer__top{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.footer__top-left{
+	max-width: 405px;
+	padding: 18px 15px 18px 0;
+	position: relative;
+}
+.footer__top-left:after{
+	content: '';
+	display: block;
+	width: 12px;
+	height: 100%;
+	background: url(../img/split.png) center center no-repeat;
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+}
+.footer__top-caption{
+	font-size: 18px;
+	color: #8e4423;
+	font-style: italic;
+	font-weight: bold;
+}
+.footer__top-caption span{
+	font-weight: 300;
+}
+.footer__top p{
+	font-size: 13px;
+	color: #7b7a6d;
+	margin:15px 0;
+}
+.footer__top-left img{
+	width: 135px;
+	height: 85px;
+	border: 5px solid #8e4423;
+	float: right;
+	margin: 0 10px 20px;
+}
+.footer__top-right{
+	padding: 18px 0 18px 15px;
+}
+.sign-up{
+	margin: 15px 0;
+	padding: 1px;
+	height: 40px;
+	display: block;
+	border: 1px solid gray;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+.sign-up__text{
+	margin: 0 30px 0 10px;
+	border: none;
+	background: none;
+	color: white;
+}
+.sign-up__button{
+	
+	display: block;
+	height: 100%;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 13px;
+	font-style: italic;
+	background: #833d20;
+	border: none;
 }
