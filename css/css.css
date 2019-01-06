@@ -151,12 +151,14 @@ body{
 .client-form__out{
 	color: #e6e3bb;
 	background: #984a26;
+	background: linear-gradient(to bottom,#ae572d, #833d20);
 	border-radius: 5px;
 	border: none;
 	line-height: 27px;
 	font-size: 14px;
 	padding:0 15px;
 	cursor: pointer;
+	border-top: 1px solid #b57657;
 }
 .header__right{
 	display: flex;
@@ -410,7 +412,8 @@ body{
 .footer{
 	background: #242729;
 	border-top: 10px solid #8a4222;
-	padding: 15px 20px 20px 20px;
+	padding: 15px 0 20px 0;
+	border-radius: 0 0 10px 10px;
 }
 .footer__top{
 	display: -webkit-flex;
@@ -419,6 +422,7 @@ body{
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0 20px;
 
 }
 .footer__top-left{
@@ -450,6 +454,7 @@ body{
 	font-size: 13px;
 	color: #7b7a6d;
 	margin:15px 0;
+	line-height: 1.5;
 }
 .footer__top-left img{
 	width: 135px;
@@ -460,16 +465,17 @@ body{
 }
 .footer__top-right{
 	padding: 18px 0 18px 15px;
+	flex: 1;
 }
 .sign-up{
 	margin: 15px 0;
 	padding: 1px;
 	height: 40px;
-	display: block;
 	border: 1px solid gray;
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
+	width: fit-content;
 }
 .sign-up__text{
 	margin: 0 30px 0 10px;
@@ -477,8 +483,7 @@ body{
 	background: none;
 	color: white;
 }
-.sign-up__button{
-	
+.sign-up__button{	
 	display: block;
 	height: 100%;
 	border-radius: 5px;
@@ -486,5 +491,141 @@ body{
 	font-size: 13px;
 	font-style: italic;
 	background: #833d20;
+	background: linear-gradient(to bottom,#ae572d, #833d20);
 	border: none;
+	border-top: 1px solid #b57657;
+}
+.twit-follow{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 25px 0;
+}
+.twit-follow__button{
+	background: url(../img/twitter_newbird_blue.png) top center no-repeat;
+	background-position-y: 10px;
+	padding: 1px;
+	display: block;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 60px;
+	min-height: 65px;
+	margin-right: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	
+}
+.twit-follow__button button{
+	display: block;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 13px;
+	font-style: italic;
+	width: 100%;
+	background: #833d20;
+	background: linear-gradient(to bottom,#ae572d, #833d20);
+	border: none;
+	border-top: 1px solid #b57657;
+}
+.twit-follow__text{
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 0 15px;
+	flex:1;
+	position: relative;
+}
+.twit-follow__text p{
+	color: #6f6f64;
+	font-size: 14px;
+}
+.twit-follow__text span{
+	color: #e6e3bb;
+}
+.twit-follow__re-tweet{
+	position: absolute;
+	bottom: 0;
+	right: 3px;
+}
+.footer__center{
+	padding: 35px 20px;
+	background: #e6e3bb;
+	display: flex;
+	justify-content: space-between;
+}
+.footer__center-caption{
+	color: #8e4423;
+	font-size: 18px;
+	font-style: italic;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #7b7a6d;
+}
+.square-img-list{
+	max-width: 275px;
+}
+.square-img-list__list{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.square-img-list__list a{
+	display: flex;
+	width: 62px;
+	height: 62px;
+	background: #8e4423;
+	border: 1px solid #242729;
+}
+.square-img-list__list img{
+	margin: auto;
+}
+.square-img-list__list li{
+	margin-top: 10px;
+}
+.logos-list{
+	text-align: center;
+	margin-left: 40px;
+	flex:1;
+}
+.logos-list__list li{
+	margin: 13px 0;	
+}
+.text-list{
+	text-align: center;
+	margin-left: 40px;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+	flex: 1;
+}
+.text-list__list li,.text-list__list a{
+	color: #4f504b;
+	font-size: 14px;
+	margin: 13px 0;
+}
+.footer__bottom{
+	padding: 20px 20px 0;
+	color: #725142;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+.sub_nav{
+	display: flex;
+}
+.sub_nav a{
+	color: #725142;
+	font-size: 12px;
+}
+.sub_nav li{
+	margin-left: 10px;
+}
+.sub_nav li:before{
+	content: "/";
+	margin-right: 10px;
+}
+.sub_nav li:first-child:before{
+	content: none;
 }
