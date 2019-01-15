@@ -1084,5 +1084,69 @@ body{
     margin: 40px 40px 0;
 }
 .description{
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.description__button{
+    display: inline-block;
+    border-radius: 5px;
+    color: #e6e3bb;
+    font-size: 14px;
+    font-style: italic;
+    background: #833d20;
+    background: linear-gradient(to bottom,#ae572d, #833d20);
+    border: none;
+    border-top: 1px solid #b57657;
+    padding: 5px 15px;
+    line-height: 20px;
+}
+.blog-items__caption_margin-top{
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+.content-main p{
+    margin: 10px 0;
+    line-height: 1.5;
+    color:#7b7a6d;
+    font-size: 13px;
+}
+.quotes-block{
+    min-height: 235px;
+    background: url("../img/Featured-Image.png")center no-repeat;
+    background-size: contain;
+    background-position-x: -220px;
+    display: flex;
+}
+.quotes{
+    max-width: 320px;
+    margin: auto 0 auto 300px;
+}
+.quotes p{
+    font-size: 14px;
+    color: #7b7a6d;
+    font-style: italic;
+    font-weight: 700;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+.second-title_mic:before{
+    background: url("../img/Mic.png")no-repeat;
+    width: 30px;
+    height: 32px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    background-position: center;
+}
+.quotes i{
+    display: inline-block;
+    width: 20px;
+    height: 11px;
+    background: url("../img/hooks.png")center center no-repeat;
+}
+.content-wrapp_bottom{
+    margin-top: 0;
 }
